@@ -31,6 +31,22 @@
 		<link data-font="g-font-pt-sans" data-protected="true" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 		<link data-font="g-font-lobster" data-protected="true" href="https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic-ext,latin-ext" rel="stylesheet">
 	</noscript>
+<!-- Event snippet for просмотры conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-747902501/9fHBCIeSvJ8BEKWs0OQC',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="keywords" content="съемка видео,рекламный ролик,корпоративное видео,видеооператор краснодар,съемки клипа,свадебные видео, видеооператор свадьба" />
